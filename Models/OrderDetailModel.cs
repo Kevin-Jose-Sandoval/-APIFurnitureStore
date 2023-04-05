@@ -6,11 +6,14 @@
     [Table("order_detail")]
     public class OrderDetailModel
     {
-        [Column("order_id")]
+        [Key, Column("order_id")]
         public int OrderId { get; set; }
 
-        [Column("product_id")]
+        [Key, Column("product_id")]
         public int ProductId { get; set; }
+
+        public virtual ProductModel Product { get; set; }
+        public virtual OrderModel Order { get; set; }
 
         [Column("quantity")]
         public int Quantity { get; set; }

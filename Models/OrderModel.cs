@@ -23,6 +23,10 @@
         [Column("delivery_date")]
         public DateTime DeliveryDate { get; set; }
 
-        public List<OrderDetailModel> OrderDetails { get; set; }
+        // Many to One: Client
+        public virtual ClientModel Client { get; set; }
+
+        // Many to Many: OrderDetail
+        public virtual ICollection<OrderDetailModel> OrderDetails { get; set; }
     }
 }

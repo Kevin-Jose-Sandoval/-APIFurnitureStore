@@ -13,5 +13,8 @@
 
         [Column("name")]
         public string Name { get; set; }
+
+        // One to Many: Product
+        public virtual ICollection<ProductModel> Products { get; set; }
     }
 }

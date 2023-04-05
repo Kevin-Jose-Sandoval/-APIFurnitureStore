@@ -25,5 +25,8 @@
 
         [Column("address")]
         public string Address { get; set; }
+
+        // One to Many: Order
+        public virtual ICollection<OrderModel> Orders { get; set; }
     }
 }

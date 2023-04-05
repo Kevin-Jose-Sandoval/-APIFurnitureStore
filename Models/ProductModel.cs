@@ -20,6 +20,10 @@
         [Column("category_id")]
         public int CategoryId { get; set; }
         
-        public List<OrderDetailModel> OrderDetails { get; set; }
+        // Many to One: Category
+        public virtual CategoryModel Category { get; set; }
+
+        // Many to Many: OrderDetail
+        public virtual ICollection<OrderDetailModel> OrderDetails { get; set; }
     }
 }
