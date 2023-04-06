@@ -2,6 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text.Json.Serialization;
 
     [Table("category")]
     public class CategoryModel
@@ -15,6 +16,7 @@
         public string Name { get; set; }
 
         // One to Many: Product
-        public virtual ICollection<ProductModel> Products { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<ProductModel>? Products { get; set; }
     }
 }
