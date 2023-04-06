@@ -2,6 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text.Json.Serialization;
 
     [Table("client")]
     public class ClientModel
@@ -27,6 +28,7 @@
         public string Address { get; set; }
 
         // One to Many: Order
-        public virtual ICollection<OrderModel> Orders { get; set; }
+        [JsonIgnore]
+        public virtual ICollection<OrderModel>? Orders { get; set; }
     }
 }
