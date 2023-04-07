@@ -2,6 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Text.Json.Serialization;
 
     [Table("order")]
     public class OrderModel
@@ -24,9 +25,10 @@
         public DateTime DeliveryDate { get; set; }
 
         // Many to One: Client
-        public virtual ClientModel Client { get; set; }
+        [JsonIgnore]
+        public virtual ClientModel? Client { get; set; }
 
         // Many to Many: OrderDetail
-        public virtual ICollection<OrderDetailModel> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetailModel>? OrderDetails { get; set; }
     }
 }
