@@ -1,3 +1,4 @@
+using APIFurnitureStore;
 using APIFurnitureStore.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddDbContext<FurnitureStoreContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FurnitureStoreConnectionString"))
+    options.UseSqlServer(builder.Configuration["FurnitureStore:ConnectionDatabaseString"])
 );
 
 var app = builder.Build();
@@ -17,6 +18,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    builder.Configuration.AddUserSecrets<Program>();
 }
 
 app.UseHttpsRedirection();

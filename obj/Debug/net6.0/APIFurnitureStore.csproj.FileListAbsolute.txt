@@ -98,3 +98,12 @@ C:\personal\programming\.net\APIFurnitureStore\obj\Debug\net6.0\refint\APIFurnit
 C:\personal\programming\.net\APIFurnitureStore\obj\Debug\net6.0\APIFurnitureStore.pdb
 C:\personal\programming\.net\APIFurnitureStore\obj\Debug\net6.0\APIFurnitureStore.genruntimeconfig.cache
 C:\personal\programming\.net\APIFurnitureStore\obj\Debug\net6.0\ref\APIFurnitureStore.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\APIFurnitureStore.staticwebassets.runtime.json
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\personal\programming\.net\APIFurnitureStore\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
